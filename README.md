@@ -209,7 +209,7 @@ Let's create a decoder using applicative.
 
 Reminder: the constructor for `CoolItem` is `(Int -> Bool -> CoolItem)`
 
-So, `Decode.succed CoolItem` is `Decoder (Int -> Bool -> CoolItem)`
+So, `Decode.succeed CoolItem` is `Decoder (Int -> Bool -> CoolItem)`
 
 Also, lets forget `Json.Decode.objectN`s don't exist because they don't
 scale infinity whereas the applicatives do.
